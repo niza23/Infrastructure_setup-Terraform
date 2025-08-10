@@ -163,7 +163,7 @@ This project was inspired by and follows the Abhishek Veeramalla YouTube Playlis
 A big thanks to Abhishek for providing clear, practical tutorials!
 
 # Notes
--Ensure userdata.sh and userdata1.sh are executable and contain valid scripts.
+-Ensure userdata1.sh and userdata2.sh are executable and contain valid scripts.
 
 -Do not commit terraform.tfvars to version control if it contains sensitive data.
 
