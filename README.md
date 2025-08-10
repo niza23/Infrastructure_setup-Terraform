@@ -127,8 +127,38 @@ s3_bucket_name  = terraform-demo-bucket-2025
 web1_public_ip  = 54.210.x.x
 web2_public_ip  = 3.94.x.x
 ```
+# How It Can Be Improved
+### This setup can be extended and improved with:
 
-## Credits
+-Private Subnets & NAT Gateway
+
+Move backend servers or databases to private subnets for better security.
+
+Use a NAT Gateway for outbound internet access from private instances.
+
+-Multi-Environment Setup
+
+Create separate environments (dev, staging, prod) using Terraform workspaces or separate state files.
+
+Parameterize environment-specific variables like instance types, CIDR blocks, and tags.
+
+-Bastion Host / Jump Server
+
+Add a bastion host in the public subnet to SSH into private instances.
+
+-Database Integration
+
+Provision RDS or DynamoDB for application data storage.
+
+- Modules for Reusability
+
+Break down the infrastructure into reusable Terraform modules (VPC module, EC2 module, ALB module, etc.).
+
+-CI/CD Pipeline
+
+Automate terraform plan and terraform apply using GitHub Actions, GitLab CI, or Jenkins.
+
+# Credits
 This project was inspired by and follows the Abhishek Veeramalla YouTube Playlist on Terraform AWS infrastructure setup. 
 A big thanks to Abhishek for providing clear, practical tutorials!
 
