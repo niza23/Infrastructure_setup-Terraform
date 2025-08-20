@@ -48,7 +48,7 @@ Terraform installed (v1.3+ recommended)
 1️⃣ Clone this repository
 
 ```bash
-git clone https://github.com/your-repo/terraform-aws-project.git
+git clone https://github.com/niza23/Infrastructure_setup-Terraform
 cd terraform-aws-project
 
 ```
